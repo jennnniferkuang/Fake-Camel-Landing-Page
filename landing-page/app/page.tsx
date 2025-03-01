@@ -1,10 +1,13 @@
+import Dropdowns from "./dropdowns";
+
+
 export default function Home() {
   return (
     <>
       <head>
         <title>camelAI: AI-powered Data Analysis | SQL-Free Business Intelligence</title>
       </head>
-      
+
       <div className="fixed navbar">
         <img className="justify-start h-8" src="https://camelai.com/assets/images/main-camelai.png" alt="camelAI-logo"></img>
         <ul className="flex mx-5 justify-end space-x-8 text-lg text-right list-none">
@@ -17,217 +20,136 @@ export default function Home() {
       <div className="gradient-background">
         <div className="text-center mt-[150px]">
           <h1 className="text-7xl font-bold">The AI Data Analyst</h1>
-          <p className="mt-10 text-2xl">budget version by Jennifer Kuang XD</p>
+          <p className="mt-12 text-2xl">budget version by Jennifer Kuang XD</p>
         </div>
+        <div className="flex item-center justify-center mt-12 gap-x-4">
+            <button className="white-button">Try free
+              <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
+            </button>
+            <button className="clear-button">Book demo
+              <img className="justify-end h-3 invert" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
+            </button>
+        </div>
+        <video className="static m-[100px] w-[65vw] rounded-lg" autoPlay loop muted >
+          <source src="https://camelai.com/assets/images/camelai-gif.mp4" type="video/mp4"></source>
+          <img className="absolute inset" src="https://camelai.com/assets/images/play-icon-2.png"></img>
+        </video>
       </div>
 
       <div className="black-background">
+      {/* Block 1 */}
+        <div className="code-block">
+          <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/code-icon.png"></img>
+          <p>Ask any question</p>
+        </div>
+        <p className="mt-[25px] small-text">Camel uses your live data.</p>
+        <p className="small-text">Get tables and charts instantly.</p>
+        <img className="image-style" src="https://camelai.com/assets/images/chat-demo-ss.png"></img>
 
+      {/* Block 2 */}
+        <div className="code-block">
+          <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/light-bulb-icon.png"></img>
+          <p>Powerful Dashboards</p>
+        </div>
+        <p className="mt-[25px] small-text">Save any graph to a live dashboard.</p>
+        <p className="small-text">Start a chat to answer ad hoc questions.</p>
+        <img className="image-style" src="https://camelai.com/assets/images/dashboard-demo-ss.png"></img>
+
+      {/* FAQs */}
+        <h1 className="text-3xl font-bold my-10">FAQs</h1>
+        <div>
+          <Dropdowns/>
+        </div>
+
+      {/* Get Started */}
+        <div className="flex sm:flex-row flex-col item-center w-[75vw] justify-between mt-[100px] gap-x-4">
+          <h1 className="justify-start text-3xl">Get started for free.</h1>
+          <div className="flex justify-end space-x-5">
+            <button className="white-button">Try free
+              <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
+            </button>
+            <button className="clear-button">Contact us
+              <img className="justify-end h-3 invert" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
+            </button>
+          </div>
+        </div>
       </div>
-      
-      {/* <footer className="bg-white dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div className="md:flex md:justify-between">
-              <div className="mb-6 md:mb-0">
-                  <a href="https://flowbite.com/" className="flex items-center">
-                      <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
-                      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                  </a>
-              </div>
-              <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                  <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                      <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                          <li className="mb-4">
-                              <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
-                          </li>
-                          <li>
-                              <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                      <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                          <li className="mb-4">
-                              <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
-                          </li>
-                          <li>
-                              <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                      <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                          <li className="mb-4">
-                              <a href="#" className="hover:underline">Privacy Policy</a>
-                          </li>
-                          <li>
-                              <a href="#" className="hover:underline">Terms &amp; Conditions</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between">
-              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
-              </span>
-              <div className="flex mt-4 sm:justify-center sm:mt-0">
-                  <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                            <path fillRule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clipRule="evenodd"/>
-                        </svg>
-                      <span className="sr-only">Facebook page</span>
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                            <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                        </svg>
-                      <span className="sr-only">Discord community</span>
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                        <path fillRule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clipRule="evenodd"/>
-                    </svg>
-                      <span className="sr-only">Twitter page</span>
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clipRule="evenodd"/>
-                      </svg>
-                      <span className="sr-only">GitHub account</span>
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                      <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clipRule="evenodd"/>
-                    </svg>
-                      <span className="sr-only">Dribbble account</span>
-                  </a>
-              </div>
-          </div>
-        </div>
-    </footer> */}
 
-    {/* <footer>
-        <div className="footer-section-holder">
-          <div className="footer-header-section">
-            <div className="footer-header-section-left">
-              <div className="footer-header">
-                <img src="https://camelai.com/assets/images/main-camelai.png" alt="camelAI logo"></img>
-              </div>
-              <div className="footer-subheader">
-                {/* <form id="signup-form" onsubmit="submitForm(event)">
-                  <label for="email"><p>Subscribe to our newsletter for product updates</p></label>
-                  <div className="footer-newsletter-signup">
-                    <input className="input-field" type="email" id="email" name="email" placeholder="email" required="" fdprocessedid="xiqtgo">
-                    <button className="primary-button footer" type="submit" id="submit-button" fdprocessedid="gutyne">
-                      Subscribe
-                      <img className="button-icon" src="/assets/images/chevron-right-black.png" alt="chevron right"></img>
-                    </button>
-                  </div>
-                </form> */}
-                {/* <script>
-                  // this form is janky but it works
-                  async function submitForm(event) {
-                    event.preventDefault();
-                    const email = document.getElementById('email').value;
-                    const submitButton = document.getElementById('submit-button');
-                    
-                    // Change button text to "Sent"
-                    submitButton.textContent = 'Sent';
-                
-                    const response = await fetch('https://script.google.com/macros/s/AKfycbxJaTUMyt5YvyNxEsOACI7m8bnsGZFqh_nyH3mOE62PTZlsEIg_RCx3qsUAW13Zhv7K/exec', {
-                    method: 'POST',
-                    headers: {
-                      'Content-Type': 'text/plain',
-                    },
-                    body: JSON.stringify({ email }),
-                    });
-                
-                    const result = await response.json();
-                    if (result.result === 'success') {
-                    alert('Thank you for signing up!');
-                    document.getElementById('email').value = '';
-                    } else {
-                    alert('There was an error. Please try again.');
-                    }
-                  }
-                </script>
-              </div>
-                
-                
-              <div className="footer-social-links-section">
-                <a href="https://x.com/usecamelai">
-                  <img src="/assets/images/x.com.png" alt="x logo"></img>
-                </a>
-                <a href="https://discord.gg/juNYATfJTZ">
-                  <img src="/assets/images/discord.png" alt="discord logo"></img>
-                </a>
-                <a href="https://www.linkedin.com/company/usecamelai">
-                  <img src="/assets/images/linkedin.png" alt="linkedin logo"></img>
-                </a>
-                <a href="https://www.youtube.com/channel/UCDwycyxNe0_FFgL6TeFrLaw">
-                  <img src="/assets/images/youtube.png" alt="youtube logo"></img>
-                  </a><a href="https://github.com/qaml-ai">
-                    <img src="/assets/images/github.png" alt="github logo"></img>
-                  </a>
-                
-              </div>
+      <footer className="bg-black text-white py-10 px-6">
+        <div className="footer-cols">
+          {/* Logo */}
+          <div className="flex flex-col justify-start">
+            <div className="flex items-center space-x-2">
+              <img src="https://camelai.com/assets/images/main-camelai.png" alt="camelAI Logo" className="h-[75px]" />
             </div>
-            <div className="footer-header-section-right">
-              <div className="footer-docs-list">
-                <p className="footer-docs-header">Company</p> 
-                <a href="/about-us">
-                  <p>About Us</p> 
-                </a>
-                <a href="https://cal.com/ipr-camelai/book-a-demo">
-                  <p>Schedule a call</p> 
-                </a>
-                <a href="mailto:support@camelai.com">
-                  <p>Email Us</p>
-                </a>						  
-              </div>
-              <div className="footer-docs-list">
-                <p className="footer-docs-header">Links</p> 
-                <a href="/data-sources">
-                  <p>Data Sources</p> 
-                </a>
-                <a href="https://www.youtube.com/channel/UCDwycyxNe0_FFgL6TeFrLaw">
-                  <p>Demo Videos</p> 
-                </a>
-                <a href="/blog">
-                  <p>Blog</p>
-                </a>
-                <a href="https://www.producthunt.com/products/camelai">
-                  <p>Product Hunt</p>
-                </a>
-              </div>
-              <div className="footer-docs-list">
-                <p className="footer-docs-header">Legal</p> 
-                <a href="/terms">
-                  <p>Terms</p> 
-                </a>
-                <a href="/privacy-policy">
-                  <p>Privacy Policy</p> 
-                </a>
-                <a href="/security">
-                  <p>Security</p> 
-                </a>
-                <a href="/acceptable-use">
-                  <p>Acceptable Use</p> 
-                </a>
-              </div>
+
+            {/* Newsletter */}
+            <p className="text-white my-5">Subscribe to our newsletter for product updates</p>
+            <div className="flex items-center space-x-2">
+              <input className="input-style"
+                type="email"
+                placeholder="email"
+              />
+              <button className="white-button">Subscribe
+                <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
+              </button>
             </div>
-          </div>	
-          <div className="footer-bottom-space">
-            <div className="footer-bottom">
-              <p>© 2024 camelQA (DBA camelAI) | All rights reserved</p>
+
+            {/* Social Icons */}
+            <div className="flex justify-start space-x-2 mt-[100px]">
+              <a href="#" className="p-2">
+                <img className="h-8" src="https://camelai.com/assets/images/x.com.png"></img>
+              </a>
+              <a href="#" className="p-2">
+                <img className="h-8" src="https://camelai.com/assets/images/discord.png"></img>
+              </a>
+              <a href="#" className="p-2">
+                <img className="h-8" src="https://camelai.com/assets/images/linkedin.png"></img>
+              </a>
+              <a href="#" className="p-2">
+                <img className="h-8" src="https://camelai.com/assets/images/youtube.png"></img>
+              </a>
+              <a href="#" className="p-2">
+                <img className="h-8" src="https://camelai.com/assets/images/github.png"></img>
+              </a>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div className="flex flex-cols-3 gap-8 text-left my-6 text-[12px] justify-end">
+            <div>
+              <h3 className="text-gray-400 font-bold">Company</h3>
+              <ul className="mt-7 space-y-7 font-semibold">
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Schedule a call</a></li>
+                <li><a href="#" >Email Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-gray-400 font-bold">Links</h3>
+              <ul className="mt-7 space-y-7 font-semibold">
+                <li><a href="#" >Data Sources</a></li>
+                <li><a href="#" >Demo Videos</a></li>
+                <li><a href="#" >Blog</a></li>
+                <li><a href="#" >Product Hunt</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-gray-400 font-bold">Legal</h3>
+              <ul className="mt-7 space-y-7 font-semibold">
+                <li><a href="#" >Terms</a></li>
+                <li><a href="#" >Privacy Policy</a></li>
+                <li><a href="#" >Security</a></li>
+                <li><a href="#" >Acceptable Use</a></li>
+              </ul>
             </div>
           </div>
         </div>
-    </footer> */}
-  </>
+        {/* Footer Copyright */}
+        <div className="border-t border-gray-700 w-full mx-auto mt-2 pt-4 text-gray-500 text-[10px]">
+            © 2024 camelQA (DBA camelAI) | All rights reserved
+          </div>
+      </footer>
+    </>
   );
 }

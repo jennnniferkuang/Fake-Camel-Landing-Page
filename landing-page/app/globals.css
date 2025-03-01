@@ -7,14 +7,50 @@
 @layer components{
 
   .gradient-background{
-    @apply flex flex-col h-screen items-center bg-gradient-to-tr from-purple-900 via-teal-800 to-orange-700 text-white;
+    @apply flex flex-col h-fit items-center justify-center bg-gradient-to-tr from-purple-900 via-teal-800 to-orange-700 text-white;
   }
 
   .navbar{
-    @apply z-50 justify-between top-2 bg-black/10 backdrop-blur-md text-white font-semibold flex w-[calc(100vw-30px)] m-2 py-2 px-2 rounded-lg transition-all duration-700 ease-in-out;
+    @apply flex z-50 justify-self-center justify-between top-2 bg-black/10 backdrop-blur-md text-white font-semibold w-[98vw] m-2 py-2 px-5 rounded-lg transition-all duration-700 ease-in-out;
   }
 
   .black-background{
-    @apply flex flex-col h-screen items-center bg-neutral-900;
+    @apply flex flex-col h-fit items-center text-white bg-black;
+  }
+
+  .white-button{
+    @apply flex items-center justify-between h-fit w-[180px] px-6 py-3 rounded-full bg-white text-black font-semibold transition-all duration-500 hover:bg-gradient-to-r hover:from-blue-200 hover:to-purple-200;
+  }
+
+  .clear-button{
+    @apply flex justify-between items-center h-fit w-[180px] px-6 py-3 rounded-full bg-transparent text-white font-semibold transition-all duration-500 border-white border-solid border-2 hover:bg-white/10;
+  }
+
+  .code-block{
+    @apply flex flex-row justify-between items-center mt-[100px] w-fit rounded-md bg-transparent px-6 py-6 text-3xl font-mono text-white border-gray-700 border-dashed border-3;
+  }
+
+  .small-text{
+    @apply text-xl mt-1;
+  }
+
+  .image-style{
+    @apply m-[25px] w-[75vw] rounded-lg;
+  }
+
+  .footer-cols{
+    @apply max-w-6xl mx-auto flex sm:flex-row flex-col items-center text-center justify-between space-y-6
+  }
+
+  .input-style{
+    @apply bg-transparent border-1 border-white rounded-full px-4 py-2.5 outline-none text-white placeholder-gray-400 flex;
+  }
+
+  .dropdown-button{
+    @apply flex justify-between bg-transparent w-[60vw] border-b-2 border-b-gray-700 px-4 py-4 text-white;
+  }
+
+  .dropdown-contents{
+    @apply flex justify-center w-[60vw] p-3 rounded-md bg-gray-700 text-sm font-mono;
   }
 }
