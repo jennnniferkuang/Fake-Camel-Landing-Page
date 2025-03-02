@@ -3,20 +3,20 @@ import { useState } from "react";
 
 const faqData = [
   {
-    question: "How is my data stored?",
-    answer: "camelAI's infrastructure is hosted on AWS. Data from applications is pulled only when necessary and limited to what you request in your prompt. It is stored in an EC2 cache for 5 minutes and then deleted.",
+    question: "How am I a good fit for this role?",
+    answer: "I love web dev :D Though my background is primarily in backend development, my familiarity with general programming, databases, languages such as TypeScript and Python, as well as my willingness to learn is what I believe contributes the most to my success.",
   },
   {
-    question: "Do you train on my data?",
-    answer: "No, we do not train on your data. CamelAI is powered by OpenAI's API. We have opted out of data sharing for training. You can read more about OpenAI's API policies here.",
+    question: "What is my history in software development?",
+    answer: "I started off my career making video games because I loved playing them, but eventually delved more into other areas, working as a computer science research assistant, teaching competitive programming, and more. I'm currently hyperfixated on AI, ML, cybersecurity, and data.",
   },
   {
-    question: "Are my app connections secure?",
-    answer: "Yes, your app connections are secure. We use OAuth 2.0 when available or secure key authentication to authenticate and authorize access to your applications. Your data is encrypted in transit and at rest. If you revoke access to an app, the connection is immediately destroyed and we will no longer have access to that application.",
+    question: "Am I a real person?",
+    answer: "YES I have a big life outside of the 'puter! I do archery and go for walks alone and make art and play video games, and part of the reason I love programming so much is because I think it's as valid a form of expression as language or art is!",
   },
   {
-    question: "How do you pull my data?",
-    answer: "camelAI only communicates with your connected apps when you request data in the chat. We do not train on your data, nor do we access or store any data without your request and supervision.",
+    question: "Am I excited to work at AllMind?",
+    answer: "ONE HUNDRED PERCENT!!! I would honestly so much more prefer to work at a start-up that actually makes me Do Stuff TM than a bigger company that puts me in a cubicle with nothing to do. Not to mention that AllMind's projects are exactly what I'm looking for: a mix of full-stack, AI/ML, and data.",
   },
 ];
 
@@ -28,7 +28,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-[65vw] mx-auto p-6 text-white">
+    <div className="md:w-[65vw] w-[100vw] mx-auto p-6 text-white">
       {faqData.map((item, index) => (
         <div key={index} className={openIndex === index ? "border-transparent" : "border-b-3 border-gray-700"}>
           <button className="w-full text-left py-7 px-4 flex justify-between items-center transition duration-400" onClick={() => toggleFAQ(index)}>

@@ -47,7 +47,7 @@
   }
 
   .footer-cols{
-    @apply max-w-6xl mx-auto flex sm:flex-row flex-col items-center text-center justify-between space-y-6
+    @apply max-w-6xl mx-auto flex md:flex-row flex-col items-center text-center justify-between space-y-6
   }
 
   .input-style{

@@ -33,14 +33,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex item-center justify-center mt-12 gap-x-4">
-            <button className="white-button">Try free
+            <a className="white-button">Try free
               <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-            </button>
-            <button className="clear-button">Book demo
+            </a>
+            <a className="clear-button">Book demo
               <img className="justify-end h-3 invert" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-            </button>
+            </a>
         </div>
-        <div className="relative m-[100px] w-[65vw]">
+        <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="relative m-[100px] w-[65vw]">
           {/* Video */}
           <video className="w-full rounded-lg" autoPlay loop muted>
             <source src="https://camelai.com/assets/images/camelai-gif.mp4" type="video/mp4" />
@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* Overlay Play Icon */}
           <img src="https://camelai.com/assets/images/play-icon-2.png" className="play-button" alt="Play Icon"/>
-        </div>
+        </a>
       </div>
 
       <div className="black-background">
@@ -60,8 +60,8 @@ export default function Home() {
           <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/code-icon.png"></img>
           <p>Ask any question</p>
         </div>
-        <p className="mt-[25px] small-text">Camel uses your live data.</p>
-        <p className="small-text">Get tables and charts instantly.</p>
+        <p className="mx-6 mt-6 small-text">Hi AllMind AI!</p>
+        <p className="mx-6 mb-6 small-text">Click any button or linked element to check out my resume!</p>
         <img className="image-style" src="https://camelai.com/assets/images/chat-demo-ss.png"></img>
 
       {/* Block 2 */}
@@ -69,24 +69,18 @@ export default function Home() {
           <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/light-bulb-icon.png"></img>
           <p>Powerful Dashboards</p>
         </div>
-        <p className="mt-[25px] small-text">Save any graph to a live dashboard.</p>
-        <p className="small-text">Start a chat to answer ad hoc questions.</p>
+        <p className="mx-6 mt-6 small-text">I speedran the development of this site as my last midterm was on Friday!</p>
+        <p className="mx-6 mb-6 small-text">I hope you'll understand it doesn't have all the animations I wanted it to have.</p>
         <img className="image-style" src="https://camelai.com/assets/images/dashboard-demo-ss.png"></img>
-
-      {/* FAQs */}
-        <h1 className="text-3xl font-bold my-10">FAQs</h1>
-        <div>
-          <Dropdowns/>
-        </div>
 
       {/* Build with CamelAI */}
       <div className="flex sm:flex-row flex-col justify-between m-5 w-[75vw] text-white">
         <div className="flex flex-col w-[35vw] justify-start m-7">
           <h1 className="text-3xl font-mono my-10">Want to build with camelAI?</h1>
           <p className="text-2xl">Embed AI-powered analytics directly in your application with our API</p>
-          <button className="mt-[50px] white-button">Join API waitlist
+          <a className="mt-[50px] white-button">Join API waitlist
             <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-          </button>
+          </a>
         </div>
         <div className="flex flex-col w-[35vw] justify-end m-7">
           <h2 className="text-2xl">Natural Language → SQL</h2>
@@ -98,16 +92,25 @@ export default function Home() {
         </div>
       </div>
 
+      {/* FAQs */}
+      <h1 className="text-3xl font-bold my-10">FAQs</h1>
+      <div>
+        <Dropdowns/>
+      </div>
+
       {/* Get Started */}
         <div className="flex sm:flex-row flex-col item-center w-[75vw] justify-between mt-[100px] gap-x-4">
-          <h1 className="justify-start text-3xl">Get started for free.</h1>
+          <div className="flex md:flex-row flex-col justifty-start my-3">
+            <h1 className="text-3xl mr-2">Thank you for this</h1>
+            <span className="text-3xl font-semibold bg-gradient-to-r from-purple-800 via-pink-600 to-orange-900 bg-clip-text text-transparent">opportunity!</span>
+          </div>
           <div className="flex justify-end space-x-5">
-            <button className="white-button">Try free
+            <a className="my-3 white-button">Try free
               <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-            </button>
-            <button className="clear-button">Contact us
+            </a>
+            <a className="my-3 clear-button">Contact us
               <img className="justify-end h-3 invert" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -127,26 +130,26 @@ export default function Home() {
                 type="email"
                 placeholder="email"
               />
-              <button className="white-button">Subscribe
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="white-button">Subscribe
                 <img className="justify-end h-3" src="https://camelai.com/assets/images/chevron-right-black.png"></img>
-              </button>
+              </a>
             </div>
 
             {/* Social Icons */}
             <div className="flex justify-start space-x-2 mt-[100px]">
-              <a href="#" className="p-2">
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="p-2">
                 <img className="h-8" src="https://camelai.com/assets/images/x.com.png"></img>
               </a>
-              <a href="#" className="p-2">
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="p-2">
                 <img className="h-8" src="https://camelai.com/assets/images/discord.png"></img>
               </a>
-              <a href="#" className="p-2">
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="p-2">
                 <img className="h-8" src="https://camelai.com/assets/images/linkedin.png"></img>
               </a>
-              <a href="#" className="p-2">
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="p-2">
                 <img className="h-8" src="https://camelai.com/assets/images/youtube.png"></img>
               </a>
-              <a href="#" className="p-2">
+              <a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" className="p-2">
                 <img className="h-8" src="https://camelai.com/assets/images/github.png"></img>
               </a>
             </div>
@@ -157,27 +160,27 @@ export default function Home() {
             <div>
               <h3 className="text-gray-400 font-bold">Company</h3>
               <ul className="mt-7 space-y-7 font-semibold">
-                <li><a href="#" >About Us</a></li>
-                <li><a href="#" >Schedule a call</a></li>
-                <li><a href="#" >Email Us</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >About Us</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Schedule a call</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Email Us</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-gray-400 font-bold">Links</h3>
               <ul className="mt-7 space-y-7 font-semibold">
-                <li><a href="#" >Data Sources</a></li>
-                <li><a href="#" >Demo Videos</a></li>
-                <li><a href="#" >Blog</a></li>
-                <li><a href="#" >Product Hunt</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Data Sources</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Demo Videos</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Blog</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Product Hunt</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-gray-400 font-bold">Legal</h3>
               <ul className="mt-7 space-y-7 font-semibold">
-                <li><a href="#" >Terms</a></li>
-                <li><a href="#" >Privacy Policy</a></li>
-                <li><a href="#" >Security</a></li>
-                <li><a href="#" >Acceptable Use</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Terms</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Privacy Policy</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Security</a></li>
+                <li><a href="https://drive.google.com/file/d/1xRCMAv6OdoZ0t_z5EEC33uYxH5lpwMoc/view?usp=sharing" >Acceptable Use</a></li>
               </ul>
             </div>
           </div>
