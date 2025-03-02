@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       <div className="black-background">
-        <div className="my-15 w-full">
+        <div className="mt-[100px] w-full">
           <Carousel/>
         </div>
       {/* Block 1 */}

@@ -62,13 +62,11 @@
     @apply flex justify-center w-[60vw] p-3 rounded-md bg-gray-700 text-sm font-mono;
   }
 
-  .splide__track{
-    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  .custom-carousel {
+    @apply flex h-[100px] w-full;
   }
-
-  .splide__list{
-    display: flex;
-    flex-direction: row;
+  
+  .carousel-image {
+    @apply flex h-[100px];
   }
 }
