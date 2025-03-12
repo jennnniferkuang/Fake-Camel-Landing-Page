@@ -60,8 +60,8 @@ export default function Home() {
           <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/code-icon.png"></img>
           <p>Ask any question</p>
         </div>
-        <p className="mx-6 mt-6 small-text">Hi AllMind AI!</p>
-        <p className="mx-6 mb-6 small-text">Click any button or linked element to check out my resume!</p>
+        <p className="mx-6 mt-6 small-text">Hey there! This is a remake of CamelAI's landing page to practice TypeScript</p>
+        <p className="mx-6 mb-6 small-text">I speedran the development of this in a couple hours after my midterm</p>
         <img className="image-style" src="https://camelai.com/assets/images/chat-demo-ss.png"></img>
 
       {/* Block 2 */}
@@ -69,8 +69,8 @@ export default function Home() {
           <img className="justify-start h-8 mr-5" src="https://camelai.com/assets/images/light-bulb-icon.png"></img>
           <p>Powerful Dashboards</p>
         </div>
-        <p className="mx-6 mt-6 small-text">I speedran the development of this site as my last midterm was on Friday!</p>
-        <p className="mx-6 mb-6 small-text">I hope you'll understand it doesn't have all the animations I wanted it to have.</p>
+        <p className="mx-6 mt-6 small-text">I've cheekily personalized parts of it for fun</p>
+        <p className="mx-6 mb-6 small-text">Click any button or linked element to check out my resume!</p>
         <img className="image-style" src="https://camelai.com/assets/images/dashboard-demo-ss.png"></img>
 
       {/* Build with CamelAI */}
