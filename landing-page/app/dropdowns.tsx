@@ -15,8 +15,8 @@ const faqData = [
     answer: "YES I have a big life outside of the 'puter! I do archery and go for walks alone and make art and play video games, and part of the reason I love programming so much is because I think it's as valid a form of expression as language or art is!",
   },
   {
-    question: "Am I excited to work at AllMind?",
-    answer: "ONE HUNDRED PERCENT!!! I would honestly so much more prefer to work at a start-up that actually makes me Do Stuff TM than a bigger company that puts me in a cubicle with nothing to do. Not to mention that AllMind's projects are exactly what I'm looking for: a mix of full-stack, AI/ML, and data.",
+    question: "Am I excited to work at your company?",
+    answer: "ONE HUNDRED PERCENT!!! I AM SERIOUS ABOUT BRINGING SNACKS!",
   },
 ];
 
